@@ -2,11 +2,11 @@
 {
 	public class Car : IBuildable
 	{
-		private Product vehicle;
+		private Vehicle vehicle;
 
 		public Car()
 		{
-			vehicle = new Product();
+			vehicle = new Vehicle();
 		}
 
 		public void ErstelleBasisGerät()
@@ -24,7 +24,7 @@
 			vehicle.Add("2 Scheinwerfer");
 		}
 
-		public Product GetVehicle()
+		public Vehicle GetVehicle()
 		{
 			return vehicle;
 		}

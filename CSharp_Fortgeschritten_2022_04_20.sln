@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPatternAbstract", "BuilderPatternAbstract\BuilderPatternAbstract.csproj", "{B31D7883-81DC-4AD1-8C18-F7FD8746174C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPatternFluent", "BuilderPatternFluent\BuilderPatternFluent.csproj", "{44C2C737-4919-49A7-8C3D-070BC1DF3A6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B31D7883-81DC-4AD1-8C18-F7FD8746174C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31D7883-81DC-4AD1-8C18-F7FD8746174C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31D7883-81DC-4AD1-8C18-F7FD8746174C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C2C737-4919-49A7-8C3D-070BC1DF3A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C2C737-4919-49A7-8C3D-070BC1DF3A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C2C737-4919-49A7-8C3D-070BC1DF3A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C2C737-4919-49A7-8C3D-070BC1DF3A6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

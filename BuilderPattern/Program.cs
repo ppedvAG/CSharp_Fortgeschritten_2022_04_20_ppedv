@@ -4,13 +4,11 @@ public class Program
 {
 	static void Main(string[] args)
 	{
-		Director d = new Director();
-
 		IBuildable car = new Car();
 
-		d.Construct(car); //Referenz zu car
+		Director d = new Director();
 
-		Product p = car.GetVehicle();
+		Vehicle p = d.Construct(car);
 
 		p.Show();
 	}

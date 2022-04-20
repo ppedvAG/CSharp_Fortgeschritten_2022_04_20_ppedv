@@ -1,10 +1,10 @@
 ﻿namespace BuilderPattern
 {
-	public class Product
+	public class Vehicle
 	{
 		private List<string> Parts;
 
-		public Product()
+		public Vehicle()
 		{
 			Parts = new List<string>();
 		}

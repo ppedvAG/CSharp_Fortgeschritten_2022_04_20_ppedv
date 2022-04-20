@@ -8,6 +8,6 @@
 
 		void ScheinwerferHinzufügen();
 
-		Product GetVehicle();
+		Vehicle GetVehicle();
 	}
 }
