@@ -2,11 +2,11 @@ C# Fortgeschritten vom 20.04.2022 bis 22.04.2022. Trainer: Lukas Kern (LukasK@pp
 
 Mittwoch 
 
-- [ ] Solid 
+- [ ] SOLID
 - [ ] Delegates / Actions / Func / Events / EventHandler
-- [ ] Benchmarks (StringBuilder, FileStream, Parallel.For)
 - [ ] Builder Design Pattern
 - [ ] Interfaces vs abstract in Verbindung mit dem Builder Design Pattern
+- [ ] Benchmarks (StringBuilder, FileStream, Parallel.For)
 
 Donnerstag
 
