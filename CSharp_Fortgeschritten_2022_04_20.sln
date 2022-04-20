@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID_Übung", "SOLID_Übun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesActionFuncPredicate", "DelegatesActionFuncPredicate\DelegatesActionFuncPredicate.csproj", "{87B63283-91B0-449D-932B-1AF0179FB97B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{FD12FECF-1C24-480C-8027-3D68A90D5740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{87B63283-91B0-449D-932B-1AF0179FB97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B63283-91B0-449D-932B-1AF0179FB97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87B63283-91B0-449D-932B-1AF0179FB97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD12FECF-1C24-480C-8027-3D68A90D5740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD12FECF-1C24-480C-8027-3D68A90D5740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD12FECF-1C24-480C-8027-3D68A90D5740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD12FECF-1C24-480C-8027-3D68A90D5740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
