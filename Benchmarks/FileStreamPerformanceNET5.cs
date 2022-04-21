@@ -12,6 +12,8 @@ namespace Benchmarks
 		static void Main(string[] args)
 		{
 			Summary s = BenchmarkRunner.Run<FileStreamPerformance>();
+			//.NET 5: 3.7ms, 11ms
+			//.NET 6: 1.7ms, 3.4ms
 		}
 	}
 
