@@ -63,7 +63,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL_007_ContinueWithParams"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL_008_WhenAll", "TPL_008_WhenAll\TPL_008_WhenAll.csproj", "{5CD0458A-0B7C-4C4F-9E08-B0BCC183B024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL_009_WhenAny", "TPL_009_WhenAny\TPL_009_WhenAny.csproj", "{C34D77F8-BE5F-49FC-ABD2-9448600EC9F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL_009_Unwrap", "TPL_009_WhenAny\TPL_009_Unwrap.csproj", "{C34D77F8-BE5F-49FC-ABD2-9448600EC9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL_Übung", "TPL_Übung\TPL_Übung.csproj", "{30488653-4AAA-47E5-B498-710846780897}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{C34D77F8-BE5F-49FC-ABD2-9448600EC9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C34D77F8-BE5F-49FC-ABD2-9448600EC9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C34D77F8-BE5F-49FC-ABD2-9448600EC9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30488653-4AAA-47E5-B498-710846780897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30488653-4AAA-47E5-B498-710846780897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30488653-4AAA-47E5-B498-710846780897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30488653-4AAA-47E5-B498-710846780897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
