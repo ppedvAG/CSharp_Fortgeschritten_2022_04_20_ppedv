@@ -2,11 +2,13 @@
 {
 	static void Main(string[] args)
 	{
-		ThreadPool.QueueUserWorkItem(Methode1); //Threads reihen bis Platz im Pool ist
-		ThreadPool.QueueUserWorkItem(Methode2);
+		new Thread(() => Thread.Sleep(500)).Start(); //Erzeugt Vordergrundthread (hält das Programm auf bis er fertig ist)
+		ThreadPool.QueueUserWorkItem(Methode1); //Erzeugt Hintergrundthreads (stoppt wenn das Programm stoppt, niedrige Priorität)
+		ThreadPool.QueueUserWorkItem(Methode2); //Threads reihen bis Platz im Pool ist
 		ThreadPool.QueueUserWorkItem(Methode3);
-
-		Console.ReadLine();
+		Thread.Sleep(100); 
+		//ThreadPool fängt an zu arbeiten wenn MainThread im Sleep ist
+		//ThreadPool Threads werden abgebrochen wenn der alle Thread zu Ende sind
 	}
 
 	public static void Methode1(object o)
