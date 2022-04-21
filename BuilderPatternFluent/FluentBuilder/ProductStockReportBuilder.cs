@@ -1,6 +1,6 @@
 ﻿namespace BuilderPatternFluent.FluentBuilder
 {
-	public class ProductStockReportBuilder : IReportBuilder
+	public class ProductStockReportBuilder : IReportBuildable
 	{
 		private ProductReport productReport;
 		private	List<Product> products;
@@ -11,19 +11,19 @@
 			this.products = products;
 		}
 
-		public IReportBuilder BuildHeader()
+		public IReportBuildable BuildHeader()
 		{
 			productReport.Header = "Stock Report";
 			return this;
 		}
 
-		public IReportBuilder BuildBody()
+		public IReportBuildable BuildBody()
 		{
 			productReport.Body = products.Aggregate("", (agg, product) => agg + $"Name: {product.Name}, Price: {product.Price}\n");
 			return this;
 		}
 
-		public IReportBuilder BuildFooter()
+		public IReportBuildable BuildFooter()
 		{
 			productReport.Footer = "Report End";
 			return this;

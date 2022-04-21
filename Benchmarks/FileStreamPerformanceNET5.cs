@@ -1,6 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace Benchmarks
 {
@@ -35,9 +38,7 @@ namespace Benchmarks
 		{
 			using FileStream fs = new FileStream("file.txt", FileMode.Create, FileAccess.Write, FileShare.Read, 4096, true);
 			for (int i = 0; i < FileSize / buffer.Length; i++)
-			{
 				await fs.WriteAsync(buffer);
-			}
 		}
 	}
 }

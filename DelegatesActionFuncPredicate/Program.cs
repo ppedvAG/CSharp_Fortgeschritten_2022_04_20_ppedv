@@ -17,7 +17,7 @@
 		p += PrintNameEN;
 		p -= PrintNameDE; //Methode abziehen
 		p("Max"); //Aufruf
-		p.Invoke("Max"); //Aufruf mit Invoke
+		p?.Invoke("Max"); //Aufruf mit Invoke
 
 		foreach (Delegate d in p.GetInvocationList()) //Methoden von einem Delegate iterieren
 		{

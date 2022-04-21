@@ -23,6 +23,7 @@
 			mult(4, 8);
 
 			Action<int, int> div = (x, y) => Console.WriteLine(x / y);
+			div.Invoke(4, 2);
 
 			List<string> staedteListe = new List<string>() { "Berlin", "Wien", "Paris", "Köln" };
 			string found = staedteListe.Find(match); //match ausgelagert in eigene Methode

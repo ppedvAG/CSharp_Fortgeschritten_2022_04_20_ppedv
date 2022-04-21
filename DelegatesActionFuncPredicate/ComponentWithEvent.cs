@@ -1,5 +1,16 @@
 ﻿namespace DelegatesActionFuncPredicate
 {
+	public class Program2
+	{
+		static void Main(string[] args)
+		{
+			ComponentWithEvent c = new ComponentWithEvent();
+			c.ValueChanged += (i) => Console.WriteLine(i); //Action mit einem int (i)
+			c.ProcessCompleted += () => Console.WriteLine("Fertig"); //Action ohne Parameter mit leeren Klammern und Pfeil
+			c.StartProcess();
+		}
+	}
+
 	public class ComponentWithEvent
 	{
 		public event Action ProcessCompleted;
@@ -18,16 +29,5 @@
 	public class ValueEventArgs : EventArgs
 	{
 		public int Value { get; set; }
-	}
-
-	public class Program2
-	{
-		static void Main(string[] args)
-		{
-			ComponentWithEvent c = new ComponentWithEvent();
-			c.ValueChanged += (i) => Console.WriteLine(i); //Action mit einem int (i)
-			c.ProcessCompleted += () => Console.WriteLine("Fertig"); //Action ohne Parameter mit leeren Klammern und Pfeil
-			c.StartProcess();
-		}
 	}
 }

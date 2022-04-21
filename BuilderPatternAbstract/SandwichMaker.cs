@@ -1,6 +1,6 @@
 ﻿namespace BuilderPatternAbstract
 {
-	public class SandwichMaker
+	public class SandwichMaker //Director
 	{
 		private SandwichBuildable sandwich;
 

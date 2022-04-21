@@ -2,9 +2,9 @@
 {
 	public class ReportDirector
 	{
-		private IReportBuilder report;
+		private IReportBuildable report;
 
-		public ReportDirector(IReportBuilder report)
+		public ReportDirector(IReportBuildable report)
 		{
 			this.report = report;
 		}
