@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using Erweiterungsmethoden;
+
+public class Program
 {
 	public static void Main(string[] args)
 	{
@@ -88,6 +90,9 @@
 
 		//ToDictionary
 		Dictionary<FahrzeugMarke, List<Fahrzeug>> dict = fahrzeuge.GroupBy(fzg => fzg.Marke).ToDictionary(fzg => fzg.Key, fzg => fzg.Select(e => e).ToList());
+
+		//Shuffle() Funktion aufgerufen von anderem Projekt
+		List<Fahrzeug> gemischt = fahrzeuge.Shuffle().ToList();
 	}
 
 	public record Fahrzeug(int MaximalGeschwindigkeit, FahrzeugMarke Marke);
