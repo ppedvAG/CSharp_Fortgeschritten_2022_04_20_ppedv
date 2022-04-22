@@ -9,7 +9,7 @@ namespace Benchmarks
 {
 	public class FileStreamPerformanceNET5
 	{
-		static void Main(string[] args)
+		static void Main2(string[] args)
 		{
 			Summary s = BenchmarkRunner.Run<FileStreamPerformance>();
 			//.NET 5: 3.7ms, 11ms

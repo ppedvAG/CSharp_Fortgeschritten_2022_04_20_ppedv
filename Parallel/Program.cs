@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-public class Program
+﻿public class Program
 {
 	static void Main(string[] args)
 	{
@@ -9,19 +7,16 @@ public class Program
 		Parallel.Invoke(() => //Mehrere Tasks gleichzeitig starten
 		{
 			//Längstes Wort
-			Console.Write("Längstes Wort: ");
 			GetLongestWord(words);
 		},
 		() =>
 		{
 			//Häufigstes Wort
-			Console.WriteLine("Häufigste Wörter: ");
 			GetMostCommonWords(words);
 		},
 		() =>
 		{
 			//Zähle ein Wort
-			Console.WriteLine("Anzahl sleep: ");
 			GetCountForWord(words, "sleep");
 		});
 
@@ -30,30 +25,29 @@ public class Program
 
 	static void GetLongestWord(string[] words)
 	{
+		Console.WriteLine("Längstes Wort: ");
 		Console.WriteLine(words.OrderByDescending(e => e.Length).First());
 	}
 
 	static void GetCountForWord(string[] words, string wort)
 	{
+		Console.WriteLine("Anzahl sleep: ");
 		Console.WriteLine(words.Count(e => e.Equals(wort, StringComparison.OrdinalIgnoreCase)));
 	}
 
 	static void GetMostCommonWords(string[] words)
 	{
-		var frequencyOrder = from word in words
-							 where word.Length > 6
-							 group word by word into g
-							 orderby g.Count() descending
-							 select g.Key;
-
-		var commonWords = frequencyOrder.Take(10);
-
-		StringBuilder sb = new StringBuilder();
-		foreach (var v in commonWords)
-		{
-			sb.AppendLine("  " + v);
-		}
-		Console.WriteLine(sb.ToString());
+		Console.WriteLine("Häufigste Wörter: ");
+		Console.WriteLine
+		(
+			words
+			.Where(e => e.Length >= 7)
+			.GroupBy(e => e.ToLower())
+			.ToDictionary(e => e.Key, e => e.Count())
+			.OrderByDescending(e => e.Value)
+			.Take(10)
+			.Aggregate("", (agg, kv) => agg + $"{kv.Key}: {kv.Value}\n")
+		);
 	}
 
 	static string[] GetWordArray(string url)

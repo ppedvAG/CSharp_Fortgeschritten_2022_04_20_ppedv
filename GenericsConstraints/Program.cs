@@ -14,8 +14,8 @@
 	public class DataStore4<T> where T : new() { } //Nur Typen die einen Default Konstruktor haben
 
 	public class DataStore5<TKey, TValue> //Mehrere Generics restriktieren
-		where TKey : class 
-		where TValue : struct 
+		where TKey : class
+		where TValue : struct
 	{ 
 	} 
 

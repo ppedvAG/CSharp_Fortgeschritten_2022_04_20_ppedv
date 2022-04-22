@@ -16,10 +16,12 @@ public class Program
 		return await webClient.DownloadStringTaskAsync(new Uri(@"http://www.gutenberg.org/files/54700/54700-0.txt")); //await direkt aufs Resultat gehen
 	}
 
-	//Mögliche Async Methoden (void, Task, Task<T>)
+	//Mögliche Async Methoden (void, Task, Task<T>, ValueTask<T>)
 	//public async void Void() { } //Keine Exception
 
 	//public async Task Task() { }
 
 	//public async Task<string> TaskGeneric() { }
+
+	//public async ValueTask<string> ValueTask() { }
 }

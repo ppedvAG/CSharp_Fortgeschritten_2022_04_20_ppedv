@@ -17,12 +17,11 @@ Donnerstag
 
 Freitag
 
-- [ ] C# 7.0 -> C# 10.0 Sprach Features
-		-> https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
+- [ ] C# 7.0 -> C# 9.0 Sprach Features
+- [ ] Linq / Lambda
+- [ ] Erweiterungsmethoden
+- [ ] Anonyme Typen + dynamische Typen
 - [ ] Reflection
 - [ ] Plugin Pattern (Optional, CodeReview)
 - [ ] Serialisierung
-- [ ] Linq / Lambda 
-- [ ] Erweiterungsmethoden  
 - [ ] Operatoren
-- [ ] Anonyme Typen + dynamische Typen
